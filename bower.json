@@ -1,0 +1,22 @@
+{
+  "name": "sphinx_3dr_theme",
+  "version": "0.0.1",
+  "authors": [
+    "Ramón Roche <mrpollo@gmail.com>"
+  ],
+  "description": "sphinx bower theme for 3dr",
+  "main": "dist/**",
+  "license": "Apache",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "~4.3.0",
+    "bootstrap-sass": "~3.3.3"
+  }
+}
