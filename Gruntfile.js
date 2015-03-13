@@ -30,17 +30,25 @@ module.exports = function(grunt) {
 							'bower_components/jquery/dist/jquery.js'
 						],
 						dest: 'sphinx_3dr_theme/static/js'
+					},
+					{
+						expand: true,
+						flatten: true,
+						src: [
+							'bower_components/font-awesome/fonts/*'
+						],
+						dest: 'sphinx_3dr_theme/static/fonts/'
 					}
         ]
       }
     },
-
     sass: {
       dev: {
         options: {
           style: 'expanded',
           loadPath: [
 						'bower_components/bootstrap-sass/assets/stylesheets',
+						'bower_components/font-awesome/scss',
 						'sass'
 					]
         },
