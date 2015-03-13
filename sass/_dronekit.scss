@@ -92,4 +92,8 @@ body {
 #footer {
 	margin-top: 25px;
 	padding: 25px 0;
+	.footer-buttons {
+		padding: 5px 0;
+		@include clearfix();
+	}
 }
