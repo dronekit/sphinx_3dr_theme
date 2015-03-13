@@ -15,6 +15,12 @@
 		<title>{{ title|striptags|e }}{{ titlesuffix }}</title>
 	{% endblock %}
 
+	<script type="text/javascript">
+		var DOCUMENTATION_OPTIONS = {
+			URL_ROOT:   '{{ pathto("", 1) }}',
+			VERSION:    '{{ release }}'
+		};
+	</script>
 </head>
 <body>
 	<nav id="topnav" class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -76,6 +82,8 @@
 
 	{%- block footer %}{% endblock %}
 
+	<script src="{{pathto('_static/js/jquery.js', 1) }}"></script>
+	<script src="{{pathto('_static/js/bootstrap.js', 1) }}"></script>
 	{%- for scriptfile in script_files %}
 		<script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
 	{%- endfor %}
