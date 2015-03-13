@@ -72,14 +72,18 @@ module.exports = function(grunt) {
       build: {
         options: {
           style: 'compressed',
+					sourcemap: 'none',
           loadPath: [
 						'bower_components/bootstrap-sass/assets/stylesheets',
+						'bower_components/compass-mixins/lib',
+						'bower_components/font-awesome/scss',
+						'sass'
 					]
         },
         files: [{
           expand: true,
           cwd: 'sass',
-          src: ['*.sass'],
+          src: ['*.scss'],
           dest: 'sphinx_3dr_theme/static/css',
           ext: '.css'
         }]
@@ -132,7 +136,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-open');
 
   grunt.registerTask('dependencies', [
-		'clean:dependencies',
+		//'clean:dependencies',
 		'copy:dependencies'
 	]);
   grunt.registerTask('default', [
@@ -145,9 +149,8 @@ module.exports = function(grunt) {
 		'watch'
 	]);
   grunt.registerTask('build', [
-		'exec:bower_update',
-		'clean:build',
-		//'sass:build',
+		'dependencies',
+		'sass:build',
 		'exec:build_sphinx'
 	]);
 };
