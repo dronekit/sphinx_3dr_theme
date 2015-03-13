@@ -61,7 +61,7 @@ body {
 				text-transform: uppercase;
         transition: 1s;
 			}
-      a:hover{
+      a:hover {
         color: #b6b6b6;
       }
 			&.get-started {
@@ -71,7 +71,7 @@ body {
           border: 1px solid white;
           transition: 1s;
 				}
-        a:hover{
+        a:hover {
           background: #259dd8;
           border: 1px solid #259dd8;
         }
@@ -87,4 +87,9 @@ body {
 			text-transform: uppercase;
 		}
 	}
+}
+
+#footer {
+	margin-top: 25px;
+	padding: 25px 0;
 }

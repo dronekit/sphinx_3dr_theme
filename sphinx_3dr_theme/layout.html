@@ -67,9 +67,14 @@
 			</div>
 			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 				{% block body %}{% endblock %}
+				<footer id="footer">
+					{% include "footer.html" %}
+				</footer>
 			</div>
 		</div>
 	</div>
+
+	{%- block footer %}{% endblock %}
 
 	{%- for scriptfile in script_files %}
 		<script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
