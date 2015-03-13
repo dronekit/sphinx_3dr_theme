@@ -35,9 +35,17 @@ module.exports = function(grunt) {
 						expand: true,
 						flatten: true,
 						src: [
-							'bower_components/font-awesome/fonts/*'
+							'bower_components/font-awesome/fonts/*',
 						],
 						dest: 'sphinx_3dr_theme/static/fonts/'
+					},
+					{
+						expand: true,
+						flatten: true,
+						src: [
+							'bower_components/bootstrap-sass/assets/fonts/bootstrap/*'
+						],
+						dest: 'sphinx_3dr_theme/static/fonts/bootstrap/'
 					}
         ]
       }
@@ -48,6 +56,7 @@ module.exports = function(grunt) {
           style: 'expanded',
           loadPath: [
 						'bower_components/bootstrap-sass/assets/stylesheets',
+						'bower_components/compass-mixins/lib',
 						'bower_components/font-awesome/scss',
 						'sass'
 					]

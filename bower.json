@@ -18,6 +18,7 @@
   "dependencies": {
     "bootstrap-sass": "~3.3.3",
     "modernizr": "~2.8.3",
-    "font-awesome": "~4.3.0"
+    "font-awesome": "~4.3.0",
+    "compass-mixins": "~1.0.2"
   }
 }
