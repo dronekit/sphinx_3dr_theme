@@ -21,6 +21,8 @@
 			VERSION:    '{{ release }}'
 		};
 	</script>
+
+	<script src="{{pathto('_static/js/bootstrap.js', 1) }}"></script>
 </head>
 <body>
 	<nav id="topnav" class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -80,13 +82,13 @@
 		</div>
 	</div>
 
-	{%- block footer %}{% endblock %}
-
 	<script src="{{pathto('_static/js/jquery.js', 1) }}"></script>
-	<script src="{{pathto('_static/js/bootstrap.js', 1) }}"></script>
+
 	{%- for scriptfile in script_files %}
 		<script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
 	{%- endfor %}
+
+	{%- block footer %}{% endblock %}
 </body>
 </html>
 
