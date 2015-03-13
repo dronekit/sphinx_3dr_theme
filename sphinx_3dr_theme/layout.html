@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html lang="en" class="no-js">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	{% for cssfile in css_files %}
+		<link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
+	{% endfor %}
+
+	<link rel="stylesheet" href="{{pathto('_static/css/style.css', 1) }}" />
+	<script src="{{pathto('_static/js/modernizr.js', 1) }}"></script>
+
 	{% block htmltitle %}
-	<title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+		<title>{{ title|striptags|e }}{{ titlesuffix }}</title>
 	{% endblock %}
+
 </head>
 <body>
 	{% block body %}{% endblock %}
+
+	{%- for scriptfile in script_files %}
+		<script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
+	{%- endfor %}
 </body>
 </html>
 

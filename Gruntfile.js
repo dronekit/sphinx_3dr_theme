@@ -1,5 +1,4 @@
 module.exports = function(grunt) {
-
   // load all grunt tasks
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
@@ -20,15 +19,17 @@ module.exports = function(grunt) {
       }
     },
     copy: {
-      fonts: {
+      dependencies: {
         files: [
-          // includes files within path
-          {
+					{
 						expand: true,
 						flatten: true,
-						src: ['bower_components/font-awesome/fonts/*'],
-						dest: 'sphinx_3dr_theme/static/fonts/',
-						filter: 'isFile'
+						src: [
+							'bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
+							'bower_components/modernizr/modernizr.js',
+							'bower_components/jquery/dist/jquery.js'
+						],
+						dest: 'sphinx_3dr_theme/static/js'
 					}
         ]
       }
@@ -39,16 +40,14 @@ module.exports = function(grunt) {
         options: {
           style: 'expanded',
           loadPath: [
-						//'bower_components/bourbon/dist',
-						//'bower_components/neat/app/assets/stylesheets',
-						'bower_components/font-awesome/scss',
-						//'bower_components/wyrm/sass'
+						'bower_components/bootstrap-sass/assets/stylesheets',
+						'sass'
 					]
         },
         files: [{
           expand: true,
           cwd: 'sass',
-          src: ['*.sass'],
+          src: ['*.scss'],
           dest: 'sphinx_3dr_theme/static/css',
           ext: '.css'
         }]
@@ -57,10 +56,7 @@ module.exports = function(grunt) {
         options: {
           style: 'compressed',
           loadPath: [
-						//'bower_components/bourbon/dist',
-						//'bower_components/neat/app/assets/stylesheets',
-						'bower_components/font-awesome/scss',
-						//'bower_components/wyrm/sass'
+						'bower_components/bootstrap-sass/assets/stylesheets',
 					]
         },
         files: [{
@@ -83,13 +79,17 @@ module.exports = function(grunt) {
     },
     clean: {
       build: ["demo_docs/build"],
-      fonts: ["sphinx_3dr_theme/static/fonts"]
+      dependencies: [
+				"sphinx_3dr_theme/static/fonts",
+				"sphinx_3dr_theme/static/js",
+				"sphinx_3dr_theme/static/css"
+			]
     },
 
     watch: {
       /* Compile sass changes into theme directory */
       sass: {
-        files: ['sass/*.sass', 'bower_components/**/*.sass'],
+        files: ['sass/*.scss', 'bower_components/**/*.scss'],
         tasks: ['sass:dev']
       },
       /* Changes in theme dir rebuild sphinx */
@@ -114,13 +114,13 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-open');
 
-  grunt.registerTask('fonts', [
-		'clean:fonts',
-		'copy:fonts'
+  grunt.registerTask('dependencies', [
+		'clean:dependencies',
+		'copy:dependencies'
 	]);
   grunt.registerTask('default', [
-		'exec:bower_update',
 		'clean:build',
+		'dependencies',
 		'sass:dev',
 		'exec:build_sphinx',
 		'connect',
@@ -130,7 +130,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
 		'exec:bower_update',
 		'clean:build',
-		'sass:build',
+		//'sass:build',
 		'exec:build_sphinx'
 	]);
 };
