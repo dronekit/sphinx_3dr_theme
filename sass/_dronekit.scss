@@ -1,5 +1,5 @@
 body {
-	margin-top: 72px;
+	margin-top: 62px;
 }
 
 .main {
@@ -51,29 +51,28 @@ body {
 #topnav {
 	background-color: #2d2d2d;
 	font-family: $copenhagen-regular;
-  padding: 10px;
 	.navbar-nav {
 		li {
 			font-size: 15px;
+      padding: 6px;
       letter-spacing: 3px;
 			a {
 				color: #fff;
 				text-transform: uppercase;
         transition: 1s;
 			}
-      a:hover {
+      a:hover{
         color: #b6b6b6;
       }
 			&.get-started {
 				a {
           color: white;
           text-decoration: none;
-          border: 1px solid white;
+          background: #259dd8;
           transition: 1s;
 				}
-        a:hover {
-          background: #259dd8;
-          border: 1px solid #259dd8;
+        a:hover{
+          opacity: .7;
         }
 			}
 		}
