@@ -81,14 +81,12 @@
 		</div>
 	</div>
 
-	<script src="{{pathto('_static/js/jquery.js', 1) }}"></script>
-
+	{% set script_files = ['_static/js/jquery.js', '_static/underscore.js', '_static/doctools.js', '_static/js/bootstrap.js', '_static/searchtools.js'] %}
 	{%- for scriptfile in script_files %}
 		<script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
 	{%- endfor %}
 
 	{%- block footer %}{% endblock %}
-	<script src="{{pathto('_static/js/bootstrap.js', 1) }}"></script>
 </body>
 </html>
 
