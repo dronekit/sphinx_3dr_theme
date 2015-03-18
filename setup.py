@@ -12,7 +12,7 @@ from sphinx_3dr_theme import __version__
 here = path.abspath(path.dirname(__file__))
 
 setup(
-    name='sphinx_3dr_theme',
+    name='sphinx-3dr-theme',
     version=__version__,
     url='https://github.com/3drobotics/sphinx_3dr_theme/',
     license='MIT',
