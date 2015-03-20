@@ -17,8 +17,11 @@
 
 	<script type="text/javascript">
 		var DOCUMENTATION_OPTIONS = {
-			URL_ROOT:   '{{ pathto("", 1) }}',
-			VERSION:    '{{ release }}'
+			URL_ROOT: '{{ url_root }}',
+			VERSION: '{{ release|e }}',
+			COLLAPSE_INDEX: false,
+			FILE_SUFFIX: '{{ '' if no_search_suffix else file_suffix }}',
+			HAS_SOURCE: {{ has_source|lower }}
 		};
 	</script>
 
@@ -103,7 +106,7 @@
 		</div>
 	</div>
 
-	{% set script_files = ['_static/js/jquery.js', '_static/underscore.js', '_static/doctools.js', '_static/js/bootstrap.js', '_static/searchtools.js','_static/js/cool-select.js'] %}
+	{% set script_files = ['_static/js/jquery.js', '_static/underscore.js', '_static/doctools.js', '_static/js/bootstrap.js', '_static/js/cool-select.js', '_static/searchtools.js'] %}
 	{%- for scriptfile in script_files %}
 		<script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
 	{%- endfor %}
