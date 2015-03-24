@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	{% set css_files = css_files + ['_static/pygments.css'] %}
 	{% for cssfile in css_files %}
 		<link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
 	{% endfor %}

@@ -101,3 +101,4 @@ class Foo:
 
         """
         return sum(kwargs.values()) / len(kwargs), a + b
+        
