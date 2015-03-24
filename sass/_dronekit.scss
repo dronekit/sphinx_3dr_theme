@@ -132,6 +132,15 @@ a:hover{
 #topnav {
 	background-color: #2d2d2d;
 	font-family: $copenhagen-regular;
+	.navbar-brand{
+		padding: 0px;
+		position: relative;
+		top: 20px;
+		left: 10px;
+		@include phone {
+			top: 22px;
+		}
+	}
 	.navbar-collapse{
 		border-color: gray;
 	}
@@ -156,18 +165,16 @@ a:hover{
   			top: 2px;
 			}
 		}
-		.navbar-brand{
-			@include tablet {
-				margin-top: 5px;
-			}
-		}
 	}
 	.navbar-nav {
 		margin-right: 0;
+		@include phone {
+			margin: 0px;
+		}
 		li {
 			font-size: 15px;
       letter-spacing: 3px;
-			padding: 5px;
+			padding: 4px;
 			@include phone {
 				padding: 0px;
 				:hover{
@@ -179,16 +186,25 @@ a:hover{
 				color: #fff;
 				text-transform: uppercase;
         transition: 1s;
+				top: 1px;
+				@include phone {
+					text-align:center;
+					padding: 20px;
+				}
 			}
       a:hover{
         color: #b6b6b6;
       }
 			&.get-started {
+				background: #259dd8;
+				@include phone {
+					margin-bottom: 8px;
+				}
 				a {
           color: white;
           text-decoration: none;
-          background: #259dd8;
           transition: 1s;
+					position: relative;
 				}
         a:hover{
           opacity: .7;
