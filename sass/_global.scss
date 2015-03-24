@@ -79,6 +79,22 @@ $helvetica: Helvetica Neue, Helvetica, sans-serif;
 $copenhagen-regular: "copenhagen-regular", Helvetica, sans-serif;
 $copenhagen-bold: "copenhagen-bold", Helvetica, sans-serif;
 $copenhagen-light: "copenhagen-light", Helvetica, sans-serif;
+$helvetica-neue: "HelveticaNeue", Helvetica, sans-serif;
+$helvetica-neue-light: "HelveticaNeue-Light", Helvetica, sans-serif;
+
+@include font-face("HelveticaNeue", font-files(
+	'../fonts/HelveticaNeue.svg#helveticaneue',
+  '../fonts/HelveticaNeue.ttf',
+  '../fonts/HelveticaNeue.woff',
+  '../fonts/HelveticaNeue.eot'
+));
+
+@include font-face("HelveticaNeue-Light", font-files(
+	'../fonts/HelveticaNeue-Light.svg#helveticaneue-light',
+  '../fonts/HelveticaNeue-Light.ttf',
+  '../fonts/HelveticaNeue-Light.woff',
+  '../fonts/HelveticaNeue-Light.eot'
+));
 
 @include font-face("copenhagen-regular", font-files(
 	'../fonts/copenhagen_regular-webfont.svg#copenhagenregular',
@@ -103,4 +119,3 @@ $copenhagen-light: "copenhagen-light", Helvetica, sans-serif;
   '../fonts/copenhagen_light-webfont.eot',
   '../fonts/copenhagen_light-webfont.woff2'
 ), 'lighter');
-

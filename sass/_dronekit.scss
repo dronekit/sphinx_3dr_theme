@@ -44,7 +44,7 @@ a:hover{
 		cursor: pointer;
 	  padding: 20px;
 		padding-bottom: 18px;
-		font-family: "copenhagen-light", Helvetica, sans-serif;
+		font-family: $helvetica-neue-light, Helvetica, sans-serif;
 	  font-size: 20px;
 	  text-transform: uppercase;
 		.fa{
@@ -102,7 +102,7 @@ a:hover{
 					text-decoration: none;
 				}
 				& > a:first-child {
-					font-family: $copenhagen-light;
+					font-family: $helvetica-neue-light;
 					font-size: 20px;
 					text-transform: uppercase;
 				}
@@ -141,7 +141,7 @@ a:hover{
 
 #topnav {
 	background-color: #2d2d2d;
-	font-family: $copenhagen-regular;
+	font-family: $helvetica-neue;
 	.navbar-brand{
 		padding: 0px;
 		position: relative;
@@ -236,7 +236,7 @@ a:hover{
 .main {
 	h1, h2, h3, h4, h5 {
 		a {
-			font-family: $copenhagen-light;
+			font-family: $helvetica-neue-light;
 			text-transform: uppercase;
 		}
 	}
