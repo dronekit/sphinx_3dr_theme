@@ -192,8 +192,17 @@ a:hover{
 					padding: 20px;
 				}
 			}
+			.cloud{
+				color:#259ed9;
+			}
+			.air{
+				color: white;
+			}
+			.ground{
+				color: #5FBE8C;
+			}
       a:hover{
-        color: #b6b6b6;
+        opacity: .7;
       }
 			&.get-started {
 				background: #259dd8;
