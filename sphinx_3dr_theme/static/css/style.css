@@ -9709,7 +9709,7 @@ a:hover {
   padding: 0px;
   position: relative;
   top: 20px;
-  left: 10px;
+  left: -40px;
 }
 @media (max-width: 767px) {
   #topnav .navbar-brand {
@@ -9737,7 +9737,7 @@ a:hover {
 }
 #topnav .navbar-header .navbar-toggle .fa {
   position: relative;
-  top: 2px;
+  top: 0px;
 }
 #topnav .navbar-nav {
   margin-right: 0;
