@@ -85,7 +85,7 @@
         {% block sidebartitle %}
 					{% include "searchbox.html" %}
         {% endblock %}
-				<div class="container">
+				<div class="container-fluid">
 	        {% block menu %}
 	          {% set toctree = toctree(maxdepth=2, collapse=False, includehidden=True) %}
 	          {% if toctree %}
