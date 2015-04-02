@@ -23,14 +23,13 @@ setup(
 		zip_safe=False,
 		packages=['sphinx_3dr_theme'],
 		package_data={'sphinx_3dr_theme': [
+			'*.*',
 			'theme.conf',
-			'*.html',
-			'static/*',
-			'static/css/*.css',
-			'static/js/*.js',
-			'static/font/*.*'
-			]},
-		include_package_data=True,
+			'static/css/*.*',
+			'static/fonts/*.*',
+			'static/images/*.*',
+			'static/js/*.*',
+		]},
 		install_requires=['sphinx >= 1.1'],
 		classifiers=[
 			'Development Status :: 3 - Alpha',
