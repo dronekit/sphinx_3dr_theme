@@ -264,4 +264,14 @@ a:hover{
 	width: 100%;
 	max-width: 800px;
 	line-height: 1.8em;
+	.highlight-java {
+	  width: 100%;
+	  max-width: 800px;
+	  overflow: scroll;
+	}
+
+	.highlight {
+	  width: 100%;
+	  max-width: 800px;
+	}
 }
