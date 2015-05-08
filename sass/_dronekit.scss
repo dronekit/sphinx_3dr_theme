@@ -48,17 +48,22 @@ a:hover{
   transition: .5s;
 }
 
+.now-visible{
+	display: block !important;
+}
+
 #gray-sidebar{
 	background: #333333;
 	position: relative;
 	top: -19px;
-	padding: 15px;
+	padding-top: 15px;
 }
 
 .col-sidebar {
 	padding: 0px !important;
 	line-height: 1.8em;
 	margin-top: -2px;
+	background: #333333;
 	a{
 		color:gray;
 	}
