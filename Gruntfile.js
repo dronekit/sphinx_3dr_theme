@@ -5,14 +5,15 @@ module.exports = function(grunt) {
   grunt.initConfig({
     open : {
       dev: {
-        path: 'http://localhost:1919'
+        path: 'http://0.0.0.0:9000'
       }
     },
 
     connect: {
       server: {
         options: {
-          port: 1919,
+          port: 9000,
+          hostname: '0.0.0.0',
           base: 'demo_docs/build',
           livereload: true
         }
