@@ -55,7 +55,6 @@ a:hover{
 #gray-sidebar{
 	background: #333333;
 	position: relative;
-	top: -19px;
 	padding: 0px;
 }
 
@@ -128,6 +127,11 @@ a:hover{
 			ul{
 				background: #edf0f2;
 			  margin-top: -10px;
+				margin-bottom: 40px;
+				li a {
+					display:block;
+					margin-bottom: -20px;
+				}
 			}
 		}
 		li {
@@ -156,6 +160,7 @@ a:hover{
 					a {
 						color: #a7a9ab;
 						padding-left: 30px;
+						display: none;
 					}
 				}
 			}
