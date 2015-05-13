@@ -48,9 +48,25 @@ a:hover{
   transition: .5s;
 }
 
+.now-visible{
+	display: block !important;
+}
+
+#gray-sidebar{
+	background: #333333;
+	position: relative;
+	padding: 0px;
+}
+
 .col-sidebar {
 	padding: 0px !important;
 	line-height: 1.8em;
+	margin-top: -2px;
+	background: #333333;
+	a{
+		color:gray;
+		padding: 15px;
+	}
 	#language-select{
 		background: #259dd8;
 	  color: white;
@@ -107,8 +123,27 @@ a:hover{
 	ul {
 		list-style: none;
 		padding: 0;
+		li.current {
+			ul{
+				background: #edf0f2;
+			  margin-top: -10px;
+				margin-bottom: 40px;
+				li a {
+					display:block;
+					margin-bottom: -20px;
+				}
+			}
+		}
 		li {
-			a {
+			a.current{
+				font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
+				font-size: 19px;
+				background: white;
+				padding: 6px;
+				margin-bottom: 10px;
+				font-weight: bold;
+				display: block;
+				padding-left: 15px;
 			}
 			&.toctree-l1 {
 				:hover{
@@ -117,7 +152,6 @@ a:hover{
 				& > a:first-child {
 					font-family: $helvetica-neue-light;
 					font-size: 20px;
-					text-transform: uppercase;
 				}
 			}
 			& > ul {
@@ -125,6 +159,8 @@ a:hover{
 				li {
 					a {
 						color: #a7a9ab;
+						padding-left: 30px;
+						display: none;
 					}
 				}
 			}
@@ -135,18 +171,21 @@ a:hover{
 #sidebar-search {
 	width: 100%;
 	background-color: #fff;
-	margin-bottom: 20px;
+	margin-bottom: 19px;
 	#rtd-search-form {
 		.input-group {
 			width: 100%;
 			padding: 13px;
+			background-color: #269fd4;
 			.input-group-addon {
 				border: 0;
+				border-radius: 0;
 				background-color: #fff;
 			}
 			.form-control {
 				border: 0;
 				box-shadow: none !important;
+				border-radius: 0px;
 			}
 		}
 	}
