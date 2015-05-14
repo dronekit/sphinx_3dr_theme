@@ -120,6 +120,28 @@ a:hover{
 	.show{
 		display: visible !important;
 	}
+	ul.current{
+		li.current{
+			a{
+				background: white;
+				display:block;
+				font-weight: bold;
+				font-family: $helvetica-neue-light;
+				font-size: 16px;
+				padding-top: 6px;
+			}
+			ul{
+				li{
+					a{
+						background: gray;
+					}
+				}
+			}
+			ul.current{
+				display: block !important;
+			}
+		}
+	}
 	ul {
 		list-style: none;
 		padding: 0;
@@ -135,23 +157,14 @@ a:hover{
 			}
 		}
 		li {
+
 			a.current{
 				font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
-				font-size: 19px;
-				background: white;
-				padding: 6px;
-				margin-bottom: 10px;
 				font-weight: bold;
-				display: block;
-				padding-left: 15px;
 			}
 			&.toctree-l1 {
 				:hover{
 					text-decoration: none;
-				}
-				& > a:first-child {
-					font-family: $helvetica-neue-light;
-					font-size: 20px;
 				}
 			}
 			& > ul {
@@ -186,6 +199,7 @@ a:hover{
 				border: 0;
 				box-shadow: none !important;
 				border-radius: 0px;
+				height: 46px;
 			}
 		}
 	}
