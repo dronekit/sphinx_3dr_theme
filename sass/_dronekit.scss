@@ -134,6 +134,7 @@ a:hover{
 				padding-bottom: 16px;
 				color: #404040;
 				padding-left: 10px;
+				padding-bottom: 7px;
 			}
 			ul{
 				li{
@@ -159,29 +160,7 @@ a:hover{
 	ul {
 		list-style: none;
 		padding: 0;
-		li.current {
-			ul{
-				background: #F0EEEE;
-			  margin-top: -10px;
-				margin-bottom: 20px;
-				li a {
-					display:block;
-				}
-			}
-		}
 		li {
-
-			a.current{
-				font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
-				font-weight: bold;
-				background: #c9c9c9;
-				color: #404040;
-			}
-			&.toctree-l1 {
-				:hover{
-					text-decoration: none;
-				}
-			}
 			& > ul {
 				margin-bottom: 15px;
 				li {
