@@ -65,7 +65,7 @@ a:hover{
 	background: #333333;
 	a{
 		color:gray;
-		padding: 15px;
+		padding-bottom: 6px;
 	}
 	#language-select{
 		background: #259dd8;
@@ -125,15 +125,28 @@ a:hover{
 			a{
 				background: white;
 				display:block;
-				font-weight: bold;
 				font-family: $helvetica-neue-light;
 				font-size: 16px;
 				padding-top: 6px;
+				padding-bottom: 9px;
+				font-weight: bold;
+				padding-bottom: 16px;
+				color: #404040;
+				padding-left: 10px;
 			}
 			ul{
 				li{
 					a{
-						background: gray;
+						background: #F0EEEE;
+						font-weight: 400;
+						color:#b3b3b3;
+						padding-bottom: 8px;
+						padding-left: 20px;
+					}
+					a.current{
+						background: #c9c9c9;
+						font-weight: bold;
+						color: #404040;
 					}
 				}
 			}
@@ -147,12 +160,11 @@ a:hover{
 		padding: 0;
 		li.current {
 			ul{
-				background: #edf0f2;
+				background: #F0EEEE;
 			  margin-top: -10px;
-				margin-bottom: 40px;
+				margin-bottom: 20px;
 				li a {
 					display:block;
-					margin-bottom: -20px;
 				}
 			}
 		}
@@ -161,6 +173,8 @@ a:hover{
 			a.current{
 				font-family: "HelveticaNeue-Light", Helvetica, sans-serif;
 				font-weight: bold;
+				background: #c9c9c9;
+				color: #404040;
 			}
 			&.toctree-l1 {
 				:hover{
