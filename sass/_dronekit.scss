@@ -5,9 +5,15 @@ img {
 	width: 100%;
 }
 
-h2{
-
+.headerlink{
+	padding-top: 75px;
+	margin-top: 75px;
 }
+
+.internal{
+	padding-top: 40px;
+}
+
 .highlight-java{
 	width: 100%;
 	max-width: 800px;
@@ -177,7 +183,7 @@ a:hover{
 
 #sidebar-search {
 	width: 100%;
-	background-color: #fff;
+	background-color: #269fd4;
 	margin-bottom: 19px;
 	#rtd-search-form {
 		.input-group {
