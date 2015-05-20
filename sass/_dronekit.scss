@@ -1,8 +1,19 @@
 //CODE STYLES
-.highlight-java{
+
+#api-content{
 	width: 100%;
 	max-width: 800px;
-	overflow: auto;
+	line-height: 1.8em;
+	.highlight-java {
+		width: 100%;
+		max-width: 800px;
+		overflow: scroll;
+	}
+
+	.highlight {
+		width: 100%;
+		max-width: 800px;
+	}
 }
 
 // GENERAL STYLES
@@ -25,22 +36,6 @@ a:hover{
 			font-family: $helvetica-neue-light;
 			text-transform: uppercase;
 		}
-	}
-}
-
-#api-content{
-	width: 100%;
-	max-width: 800px;
-	line-height: 1.8em;
-	.highlight-java {
-		width: 100%;
-		max-width: 800px;
-		overflow: scroll;
-	}
-
-	.highlight {
-		width: 100%;
-		max-width: 800px;
 	}
 }
 
