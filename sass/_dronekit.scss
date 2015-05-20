@@ -1,41 +1,18 @@
-body {
-	margin-top: 61px;
-}
-img {
-	width: 100%;
-}
-dt{
-	padding-top: 70px;
-	margin-top: -70px;
-}
-
-.headerlink{
-	padding-top: 75px;
-	margin-top: 75px;
-}
-
-.internal{
-	padding-top: 40px;
-}
-
+//CODE STYLES
 .highlight-java{
 	width: 100%;
 	max-width: 800px;
 	overflow: auto;
 }
 
-pre{
-	width: 100%;
+// GENERAL STYLES
+
+body {
+	margin-top: 61px;
 }
-table{
+
+img {
 	width: 100%;
-}
-.highlight{
-	width: 100%;
-	max-width: 800px;
-}
-.headerlink{
-	display: none;
 }
 
 a:hover{
@@ -43,36 +20,166 @@ a:hover{
 }
 
 .main {
+	h1, h2, h3, h4, h5 {
+		a {
+			font-family: $helvetica-neue-light;
+			text-transform: uppercase;
+		}
+	}
+}
+
+#api-content{
+	width: 100%;
+	max-width: 800px;
+	line-height: 1.8em;
+	.highlight-java {
+		width: 100%;
+		max-width: 800px;
+		overflow: scroll;
+	}
+
+	.highlight {
+		width: 100%;
+		max-width: 800px;
+	}
+}
+
+pre{
+	width: 100%;
+}
+
+.highlight{
+	width: 100%;
+	max-width: 800px;
+}
+
+.headerlink{
+	display: none;
+}
+
+.main {
 	background-color: #fff;
 }
 
-.navbar-default{
+
+// TABLE STYLES
+
+table{
+	width: 100%;
+	dt{
+		padding-top: 70px;
+		margin-top: -70px;
+	}
+}
+
+// NAV STYLES
+
+#topnav {
+	background-color: #2d2d2d;
+	font-family: $helvetica-neue;
 	border-color: #2d2d2d !important;
+	.navbar-brand{
+		padding: 0px;
+		position: relative;
+		top: 20px;
+		left: -40px;
+		@include phone {
+			top: 22px;
+		}
+	}
+	.navbar-collapse{
+		border-color: gray;
+	}
+	.navbar-header{
+		.navbar-toggle{
+			position: relative;
+			float: right;
+			margin-right: 15px;
+			color: white;
+			padding: 9px;
+			padding-left: 16px;
+			padding-right: 16px;
+			margin-top: 8px;
+			margin-bottom: 8px;
+			background-color: transparent;
+			background-image: none;
+			border: 1px solid gray;
+			border-radius: 4px;
+			font-size: 20px;
+			.fa{
+				position: relative;
+  			top: 0px;
+			}
+		}
+	}
+	.navbar-nav {
+		margin-right: 0;
+		@include phone {
+			margin: 0px;
+		}
+		li {
+			font-size: 15px;
+      letter-spacing: 3px;
+			padding: 4px;
+			@include phone {
+				padding: 0px;
+				:hover{
+					color: black !important;
+					background: whitesmoke;
+				}
+			}
+			a {
+				color: #fff;
+				text-transform: uppercase;
+        transition: 1s;
+				top: 1px;
+				@include phone {
+					text-align:center;
+					padding: 20px;
+				}
+			}
+			.cloud{
+				color:#259ed9;
+			}
+			.air{
+				color: white;
+			}
+			.ground{
+				color: #5FBE8C;
+			}
+      a:hover{
+        opacity: .7;
+      }
+			&.get-started {
+				background: #259dd8;
+				@include phone {
+					margin-bottom: 8px;
+				}
+				a {
+          color: white;
+          text-decoration: none;
+          transition: 1s;
+					position: relative;
+				}
+        a:hover{
+          opacity: .7;
+        }
+			}
+		}
+	}
 }
 
-.rotate-arrow{
-  transform: rotate(180deg) !important;
-}
-
-#arrow{
-  transition: .5s;
-}
-
-.now-visible{
-	display: block !important;
-}
-
-#gray-sidebar{
-	background: #333333;
-	position: relative;
-	padding: 0px;
-}
-
+// SIDEBAR STYLES
 .col-sidebar {
 	padding: 0px !important;
 	line-height: 1.8em;
 	margin-top: -2px;
 	background: #333333;
+	#gray-sidebar{
+		background: #333333;
+		position: relative;
+		padding: 0px;
+	}
 	a{
 		color:gray;
 		padding-bottom: 6px;
@@ -209,130 +316,12 @@ a:hover{
 	}
 }
 
-#topnav {
-	background-color: #2d2d2d;
-	font-family: $helvetica-neue;
-	.navbar-brand{
-		padding: 0px;
-		position: relative;
-		top: 20px;
-		left: -40px;
-		@include phone {
-			top: 22px;
-		}
-	}
-	.navbar-collapse{
-		border-color: gray;
-	}
-	.navbar-header{
-		.navbar-toggle{
-			position: relative;
-			float: right;
-			margin-right: 15px;
-			color: white;
-			padding: 9px;
-			padding-left: 16px;
-			padding-right: 16px;
-			margin-top: 8px;
-			margin-bottom: 8px;
-			background-color: transparent;
-			background-image: none;
-			border: 1px solid gray;
-			border-radius: 4px;
-			font-size: 20px;
-			.fa{
-				position: relative;
-  			top: 0px;
-			}
-		}
-	}
-	.navbar-nav {
-		margin-right: 0;
-		@include phone {
-			margin: 0px;
-		}
-		li {
-			font-size: 15px;
-      letter-spacing: 3px;
-			padding: 4px;
-			@include phone {
-				padding: 0px;
-				:hover{
-					color: black !important;
-					background: whitesmoke;
-				}
-			}
-			a {
-				color: #fff;
-				text-transform: uppercase;
-        transition: 1s;
-				top: 1px;
-				@include phone {
-					text-align:center;
-					padding: 20px;
-				}
-			}
-			.cloud{
-				color:#259ed9;
-			}
-			.air{
-				color: white;
-			}
-			.ground{
-				color: #5FBE8C;
-			}
-      a:hover{
-        opacity: .7;
-      }
-			&.get-started {
-				background: #259dd8;
-				@include phone {
-					margin-bottom: 8px;
-				}
-				a {
-          color: white;
-          text-decoration: none;
-          transition: 1s;
-					position: relative;
-				}
-        a:hover{
-          opacity: .7;
-        }
-			}
-		}
-	}
-}
-
-.main {
-	h1, h2, h3, h4, h5 {
-		a {
-			font-family: $helvetica-neue-light;
-			text-transform: uppercase;
-		}
-	}
-}
-
+// FOOTER STYLES
 #footer {
 	margin-top: 25px;
 	padding: 25px 0;
 	.footer-buttons {
 		padding: 5px 0;
 		@include clearfix();
-	}
-}
-
-#api-content{
-	width: 100%;
-	max-width: 800px;
-	line-height: 1.8em;
-	.highlight-java {
-		width: 100%;
-		max-width: 800px;
-		overflow: scroll;
-	}
-
-	.highlight {
-		width: 100%;
-		max-width: 800px;
 	}
 }
