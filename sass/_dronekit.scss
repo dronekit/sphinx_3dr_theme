@@ -19,6 +19,16 @@ a{
 	width: 100%;
 	max-width: 800px;
 	line-height: 1.8em;
+	ul{
+		li:before {
+			content: '•';
+		  font-size: 30px;
+		  position: relative;
+		  left: -18px;
+		  top: 6px;
+		}
+	}
+
 	.highlight-java {
 		width: 100%;
 		max-width: 800px;
