@@ -27,6 +27,9 @@ a{
 		  left: -18px;
 		  top: 6px;
 		}
+		li{
+			font-family: 'PT Serif', serif;
+		}
 	}
 
 	.highlight-java {
@@ -216,6 +219,7 @@ table{
 		color:gray;
 		padding-bottom: 6px;
 		padding-left: 10px;
+		font-size: 17px;
 	}
 	#language-select{
 		background: #259dd8;
@@ -273,6 +277,7 @@ table{
 	ul.current{
 		li.current{
 			a{
+				font-size: 17px;
 				background: white;
 				display:block;
 				font-size: 14px;
@@ -287,12 +292,12 @@ table{
 			ul{
 				li{
 					a{
+						font-size: 14px;
 						background: #F0EEEE;
 						font-weight: 400;
 						color:#b3b3b3;
 						padding-bottom: 8px;
 						padding-left: 20px;
-						font-family: 'PT Serif', serif;
 					}
 					a.current{
 						background: #c9c9c9;
