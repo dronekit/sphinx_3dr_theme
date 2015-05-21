@@ -4,7 +4,17 @@ code{
 	color: #584773;
 	background-color: #fafafc;
 	border: 1px solid #e3e4e7;
+	transition: .5s;
 }
+
+a{
+	code:hover{
+		color: #fafafc;
+		background-color: #584773;
+		border: 1px solid #584773;
+	}
+}
+
 #api-content{
 	width: 100%;
 	max-width: 800px;
