@@ -7,6 +7,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $helvetica-neue;
 }
 
+h2{
+	a{
+		padding-top:70px;
+		margin-top: -70px;
+	}
+}
+
 code{
 	color: #df3f3f;
 	background-color: #fafafc;
@@ -28,6 +35,7 @@ a{
 	max-width: 800px;
 	line-height: 1.8em;
 	ul{
+		list-style: none;
 		li:before {
 			content: '•';
 		  font-size: 30px;
