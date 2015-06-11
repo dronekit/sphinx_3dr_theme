@@ -44,6 +44,9 @@ a{
 		  top: 6px;
 		}
 		li{
+      p{
+        display: inline;
+      }
 		}
 	}
 
@@ -72,7 +75,6 @@ body {
 	p {
 		font-family: 'PT Serif', serif;
 		font-size: 16px;
-		display: inline;
 	}
 }
 
@@ -129,12 +131,15 @@ table{
 	font-family: $helvetica-neue;
 	border-color: #2d2d2d !important;
 	.navbar-brand{
-		padding: 0px;
-		position: relative;
-		top: 20px;
-		left: -40px;
+    padding: 0px;
+    position: relative;
+    top: 4px;
+    left: 13px;
+    img{
+      max-width: 180px;
+    }
 		@include phone {
-			top: 22px;
+      top: 7px;
 		}
 	}
 	.navbar-collapse{
