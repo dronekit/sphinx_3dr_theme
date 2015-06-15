@@ -14,22 +14,34 @@ h2{
 	}
 }
 
-.note{
+.note {
   color: #31708f;
   background-color: #d9edf7;
   border-color: #bce8f1;
   padding: 10px;
   margin-bottom: 10px;
   padding-bottom: 1px;
+  margin-top: 10px;
 }
 
-.warning{
+.tip{
   color: #8a6d3b;
   background-color: #fcf8e3;
   border-color: #faebcc;
   padding: 10px;
   margin-bottom: 10px;
   padding-bottom: 1px;
+  margin-top: 10px;
+}
+
+.warning{
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  padding: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 1px;
+  margin-top: 10px;
 }
 
 code{
