@@ -14,48 +14,64 @@ h2{
 	}
 }
 
-.admonition-title{
-  font-weight: bold;
+.admonition {
+  .admonition-title{
+    font-weight: bold;
+    margin-bottom: 0px;
+    display: block !important;
+  }
+  p{
+    padding: 9.5px;
+    display: block !important;
+  }
 }
 
 .note {
   color: #31708f;
   background-color: #d9edf7;
   border-color: #bce8f1;
-  padding: 10px;
   margin-bottom: 10px;
-  padding-bottom: 1px;
   margin-top: 10px;
+  .admonition-title{
+    background-color: #31708f;
+    color: white;
+  }
 }
 
 .tip , .hint{
   color: #8a6d3b;
   background-color: #fcf8e3;
   border-color: #faebcc;
-  padding: 10px;
   margin-bottom: 10px;
-  padding-bottom: 1px;
   margin-top: 10px;
+  .admonition-title{
+    background-color: #8a6d3b;
+    color: white;
+  }
 }
 
 .seealso{
   color: #3c763d;
   background-color: #dff0d8;
   border-color: #d6e9c6;
-  padding: 10px;
   margin-bottom: 10px;
-  padding-bottom: 1px;
   margin-top: 10px;
+  .admonition-title{
+    background-color: #3c763d;
+    color: white;
+  }
 }
 
 .warning{
   color: #a94442;
   background-color: #f2dede;
   border-color: #ebccd1;
-  padding: 10px;
   margin-bottom: 10px;
-  padding-bottom: 1px;
   margin-top: 10px;
+  .admonition-title{
+    background-color: #a94442;
+    color: white;
+  }
 }
 
 code{
@@ -282,10 +298,11 @@ table{
 		padding: 0px;
 	}
 	a{
-		color:gray;
-		padding-bottom: 6px;
-		padding-left: 10px;
-		font-size: 17px;
+    color: gray;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
 	}
 	#language-select{
 		background: #259dd8;
