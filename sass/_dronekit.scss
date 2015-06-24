@@ -364,6 +364,7 @@ table{
 		li.current{
       margin-bottom: 10px;
       background-color: #F0EEEE;
+      padding-bottom: 20px;
 			a{
 				font-size: 17px;
 				background: white;
@@ -380,7 +381,9 @@ table{
 			ul{
         margin-bottom: 0px;
         background-color: #F0EEEE;
-        padding-bottom: 2px;
+        li.current{
+          padding-bottom: 0px;
+        }
 				li{
 					a{
             font-size: 14px;
@@ -390,6 +393,7 @@ table{
             padding: 0px;
             padding-left: 20px;
             padding-top: 10px;
+            padding-bottom: 0px;
             margin-bottom: -7px;
 					}
           li{
