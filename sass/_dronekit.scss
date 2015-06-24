@@ -14,6 +14,10 @@ h2{
 	}
 }
 
+.gray-bg{
+  background-color: #333333;
+}
+
 .admonition {
   .admonition-title{
     font-weight: bold;
@@ -295,6 +299,9 @@ table{
 	line-height: 1.8em;
 	margin-top: -2px;
 	background: #333333;
+  position: absolute;
+  overflow-x: none;
+  overflow-y: none;
 	#gray-sidebar{
 		background: #333333;
 		position: relative;
