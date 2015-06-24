@@ -66,7 +66,7 @@
         {% endblock %}
 				<div id="gray-sidebar" class="container-fluid">
 	        {% block menu %}
-	          {% set toctree = toctree(maxdepth=2, collapse=False, includehidden=True) %}
+	          {% set toctree = toctree(maxdepth=4, collapse=False, includehidden=True) %}
 	          {% if toctree %}
 	              {{ toctree }}
 	          {% else %}
