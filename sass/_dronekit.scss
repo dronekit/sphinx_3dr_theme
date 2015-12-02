@@ -165,7 +165,8 @@ a:hover{
 pre{
 	width: 100%;
 	border: 0px;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: auto;
 }
 
 .highlight{
