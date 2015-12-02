@@ -27,6 +27,7 @@ setup(
 			'theme.conf',
 			'static/css/*.*',
 			'static/fonts/*.*',
+			'static/fonts/bootstrap/*.*',
 			'static/images/*.*',
 			'static/js/*.*',
 		]},

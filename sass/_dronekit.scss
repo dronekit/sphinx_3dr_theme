@@ -1,7 +1,7 @@
 //CODE STYLES
 
 body {
-  font-family: 'PT Serif', serif;
+  font-family: $helvetica-neue;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: $helvetica-neue;
@@ -37,6 +37,7 @@ h2{
   color: #31708f;
   background-color: #d9edf7;
   border-color: #bce8f1;
+  font-family: $helvetica-neue;
   margin-bottom: 10px;
   margin-top: 10px;
   .admonition-title{
@@ -138,13 +139,15 @@ dt{
 body {
 	margin-top: 61px;
 	p {
-		font-family: 'PT Serif', serif;
+		font-family: $helvetica-neue;
 		font-size: 16px;
 	}
 }
 
 img {
 	width: 100%;
+  padding-bottom: 20px;
+  padding-top: 15px;
 }
 
 a:hover{
@@ -486,7 +489,7 @@ table{
 #footer {
 	margin-top: 25px;
 	padding: 25px 0;
-	font-family: 'PT Serif', serif;
+	font-family: $helvetica-neue;
 	.footer-buttons {
 		padding: 5px 0;
 		@include clearfix();
